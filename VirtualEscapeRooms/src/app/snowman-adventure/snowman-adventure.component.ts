@@ -13,6 +13,7 @@ export class SnowmanAdventureComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    //jQuery(document.getElementsByClassName("build-snowman-draggable")).draggable();
   }
 
 }
