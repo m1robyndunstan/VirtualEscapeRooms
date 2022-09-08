@@ -1,1 +1,14 @@
-<p>room-list works!</p>
+<div class="container">
+    <h1 class="text-center">Virtual Escape Rooms</h1>
+    <div class="row row-cols-4">
+        <ng-container *ngFor="let room of rooms">
+            <div class="card link-card" routerLink="{{room.linkUrl}}">
+                <img src="{{room.imageUrl}}" class="card-img-top" alt="{{room.imageAlt}}" />
+                <div class="card-body">
+                    <h5 class="card-title">{{room.title}}</h5>
+                    <p class="card-text">{{room.description}}</p>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
