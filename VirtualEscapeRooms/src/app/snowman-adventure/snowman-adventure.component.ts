@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SnowmanAdventureComponent implements OnInit {
 
+  currentPage = SnowmanPages.Intro;
+  availablePages = SnowmanPages;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+}
+
+enum SnowmanPages {
+  Intro
 }

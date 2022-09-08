@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { SnowmanAdventureRoutingModule } from './snowman-adventure-routing.module';
 import { SnowmanAdventureComponent } from './snowman-adventure.component';
-import { MainComponent } from './main/main.component';
+import { BuildSnowmanComponent } from './build-snowman/build-snowman.component';
 
 
 @NgModule({
   declarations: [
     SnowmanAdventureComponent,
-    MainComponent
+    BuildSnowmanComponent
   ],
   imports: [
     CommonModule,

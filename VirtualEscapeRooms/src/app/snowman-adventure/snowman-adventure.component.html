@@ -1,11 +1,36 @@
 <div class="container">
     <h1 class="text-center">Snowman Adventure</h1>
 
-    <app-main></app-main>
+    <div class="my-5" [ngSwitch]="currentPage">
+        <ng-container *ngSwitchCase="availablePages.Intro">
+            <p class="text-center">
+                I suppose it all started with the snow. You see, it's a very special kind of snow. 
+                A snow to make the happy happier and the giddy even giddier. A snow to make a 
+                homecoming homier and natural enemies friends, naturally. For it was the first 
+                snow of the season. And as any child can tell you, there's a certain magic to the 
+                very first snow, especially when it falls on the day before Christmas. For when 
+                the first snow is also a Christmas snow, well, something wonderful is bound to 
+                happen!
+            </p>
+            <h3 class="text-center">Let's build a snowman!</h3>
+            <app-build-snowman></app-build-snowman>
+        </ng-container>
+        <ng-container *ngSwitchDefault>
+            <div class="alert alert-danger text-center">
+                <h2>Something's not working</h2>
+            </div>
+        </ng-container>
+    </div>
+
+    <p class="text-center my-3"><small>
+        Inspired by <a target="_blank" href="https://en.wikipedia.org/wiki/Frosty_the_Snowman_(TV_special)">
+            Frosty the Snowman
+        </a>
+    </small></p>
 
     <div class="row">
-        <div class="d-grid col-6 mx-auto mt-5">
-            <button type="button" class="btn btn-primary">Back to Escape Room List</button>
+        <div class="d-grid col-6 mx-auto mt-3">
+            <button type="button" class="btn btn-primary" routerLink="/">Back to Escape Room List</button>
         </div>
     </div>
 </div>
