@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { SnowmanAdventureRoutingModule } from './snowman-adventure-routing.module';
 import { SnowmanAdventureComponent } from './snowman-adventure.component';
 import { BuildSnowmanComponent } from './build-snowman/build-snowman.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { BuildSnowmanComponent } from './build-snowman/build-snowman.component';
   ],
   imports: [
     CommonModule,
+    DragDropModule,
     SnowmanAdventureRoutingModule
   ]
 })
