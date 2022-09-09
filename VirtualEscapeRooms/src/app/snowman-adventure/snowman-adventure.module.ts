@@ -5,6 +5,7 @@ import { SnowmanAdventureRoutingModule } from './snowman-adventure-routing.modul
 import { SnowmanAdventureComponent } from './snowman-adventure.component';
 import { BuildSnowmanComponent } from './build-snowman/build-snowman.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
   imports: [
     CommonModule,
     DragDropModule,
+    SharedModule,
     SnowmanAdventureRoutingModule
   ]
 })
