@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -7,19 +7,19 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./enter-solution.component.scss']
 })
 export class EnterSolutionComponent implements OnInit {
-  question = "Speak, friend, and enter.";
-  answer = "friend";
-  validation = AnswerValidationType.Exact;
-  clues = [
+  @Input() question: string = "Speak, friend, and enter.";
+  @Input() answer:string = "friend";
+  @Input() validation: AnswerValidationType = AnswerValidationType.Exact;
+  @Input() clues: string[] = [
     "Who is speaking?",
     "Replace commas with quotes."
   ];
+
+  @Output() puzzleSolved = new EventEmitter();
+
   displayedClues: string[] = [];
 
   answerControl = new FormControl('');
-
-  clueText = "";
-  clueCount = 0;
 
   constructor() { }
 
@@ -40,15 +40,14 @@ export class EnterSolutionComponent implements OnInit {
       }
 
       if (correct) {
-        // Call an input function
-        alert("You're right!");
+        this.puzzleSolved.emit();
       }
       else {
         if (this.displayedClues.length < this.clues.length) {
           this.displayedClues.push(this.clues[this.displayedClues.length]);
         }
         else if (this.displayedClues.length == this.clues.length) {
-          this.displayedClues.push("The answer is: " + this.answer);
+          this.displayedClues.push("The answer is: " + this.answer.toUpperCase());
         }
       }
     }
