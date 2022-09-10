@@ -12,11 +12,13 @@ export class SnowmanAdventureComponent implements OnInit {
   availablePages = SnowmanPages;
 
   questions = [
-    "What is the snowman missing?"
+    "What is the snowman missing?",
+    "Which one is the magic hat?"
   ];
 
   answers = [
-    "hat"
+    "hat",
+    "0"
   ];
 
   answerValidation = [
@@ -27,8 +29,27 @@ export class SnowmanAdventureComponent implements OnInit {
     [
       "His head looks a little bare.",
       "What do you wear to keep your head warm?"
+    ],
+    [
+      "The magic hat has a feather.",
+      "The magic hat has animal print."
     ]
   ];
+
+  pickOneItems = [
+    [
+      "/assets/snowman/hat_0.png",
+      "/assets/snowman/hat_1.png",
+      "/assets/snowman/hat_2.png",
+      "/assets/snowman/hat_3.png",
+      "/assets/snowman/hat_4.png",
+      "/assets/snowman/hat_5.png",
+      "/assets/snowman/hat_6.png",
+      "/assets/snowman/hat_7.png",
+      "/assets/snowman/hat_8.png",
+      "/assets/snowman/hat_9.png"
+    ]
+  ]
 
   constructor() { }
 
@@ -37,10 +58,8 @@ export class SnowmanAdventureComponent implements OnInit {
   }
 
   continue = () => {
-    switch(this.currentPage) {
-      case SnowmanPages.Intro:
-        this.currentPage = SnowmanPages.Hats;
-        break;
+    if (this.currentPage < SnowmanPages.End) {
+      this.currentPage++;
     }
   }
 }

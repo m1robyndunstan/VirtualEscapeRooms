@@ -33,6 +33,13 @@
                 <li>The magic hat is flat on top.</li>
                 <li>The magic hat has blue on it.</li>
             </ul>
+            <app-pick-one
+                [question]="questions[1]"
+                [answer]="answers[1]"
+                [clues]="clues[1]"
+                [items]="pickOneItems[0]"
+                (puzzleSolved)="continue()"
+            ></app-pick-one>
         </ng-container>
         <ng-container *ngSwitchDefault>
             <div class="alert alert-danger text-center">
