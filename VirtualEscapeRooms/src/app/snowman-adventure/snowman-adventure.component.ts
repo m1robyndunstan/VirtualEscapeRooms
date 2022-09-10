@@ -47,5 +47,11 @@ export class SnowmanAdventureComponent implements OnInit {
 
 enum SnowmanPages {
   Intro,
-  Hats
+  Hats,
+  Thermometer,
+  Map,
+  Fire,
+  Phone,
+  Lock,
+  End
 }

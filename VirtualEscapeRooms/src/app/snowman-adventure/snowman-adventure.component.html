@@ -22,6 +22,18 @@
                 (puzzleSolved)="continue()"
             ></app-enter-solution>
         </ng-container>
+        <ng-container *ngSwitchCase="availablePages.Hats">
+            <p class="text-center">
+                That’s right, he’s missing a hat! You search for a hat for the snowman and find 
+                several hats. One of these hats is a magic hat, but no one remembers which one it 
+                is. Everyone remembers a different detail about the magic hat.
+            </p>
+            <ul class="text-center list-unstyled">
+                <li>The magic hat has a ribbon.</li>
+                <li>The magic hat is flat on top.</li>
+                <li>The magic hat has blue on it.</li>
+            </ul>
+        </ng-container>
         <ng-container *ngSwitchDefault>
             <div class="alert alert-danger text-center">
                 <h2>Something's not working</h2>
