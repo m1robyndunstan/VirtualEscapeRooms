@@ -24,15 +24,152 @@
         </ng-container>
         <ng-container *ngSwitchCase="availablePages.Hats">
             <p class="text-center">
-                That’s right, he’s missing a hat! You search for a hat for the snowman and find 
+                That&apos;s right, he&apos;s missing a hat! You search for a hat for the snowman and find 
                 several hats. One of these hats is a magic hat, but no one remembers which one it 
                 is. Everyone remembers a different detail about the magic hat.
             </p>
-            <ul class="text-center list-unstyled">
-                <li>The magic hat has a ribbon.</li>
-                <li>The magic hat is flat on top.</li>
-                <li>The magic hat has blue on it.</li>
-            </ul>
+            <app-pick-hat (hatFound)="continue()"></app-pick-hat>
+        </ng-container>
+        <ng-container *ngSwitchCase="availablePages.Thermometer">
+            <p class="text-center">
+                When the magic hat is placed on his head, the snowman comes alive and starts to 
+                talk. &quot;Happy birthday! Hey, I said my first words... But snowmen can&apos;t 
+                talk. Alright, come on now, what&apos;s the joke? Could, could I really be alive? I 
+                mean, I can make words, I can move. I can juggle, I can sweep, I can count to ten. 
+                One, two, three, four, five, nine, six, eight... Well, I can count to five. What do 
+                you know? I&apos;m even ticklish. In fact, I&apos;m all living. I am alive! What a 
+                neat thing to happen to a nice guy like me.&quot;
+            </p>
+            <p class="text-center">
+                You and your friends decide to play with your new friend, the snowman. You go 
+                sledding together. You make snow angels. You have a snowball fight. After a while, 
+                the snowman looks worried. &quot;I'm feeling hot. Is there a thermometer around 
+                here?&quot;
+            </p>
+            <h3 class="text-center">Is it hot or cold?</h3>
+            <p class="text-center" *ngIf="thermometerShowClue">What does it mean when the thermometer is mostly red?</p>
+            <div class="row">
+                <div class="col text-center">
+                    <img src="/assets/snowman/thermometer.png" class="img-fluid" />
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="btn btn-lg btn-danger" (click)="continue()">
+                        <i class="fa-solid fa-sun fa-2xl"></i><br />
+                        <br />
+                        Getting hot here
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="btn btn-lg btn-info" (click)="showThermometerClue()">
+                        <i class="fa-solid fa-snowflake fa-2xl"></i><br />
+                        <br />
+                        So cold and shivery
+                    </button>
+                </div>
+            </div>
+        </ng-container>
+        <ng-container *ngSwitchCase="availablePages.Map">
+            <p class="text-center">
+                The snowman is starting to sweat and sounds nervous. &quot;Oh, I was afraid of 
+                that. When the thermometer gets all reddish, the temperature goes up. And when the 
+                temperature goes up, I start to melt. And when I start to melt... I get all wishy
+                washy! The only place I&apos;d never melt is the North Pole.&quot;
+            </p>
+            <p class="text-center">
+                You decide to take the snowman to the train station so he can go to the North Pole. 
+                On the way there, you realize that you forgot to name the snowman. Find a way 
+                through town to the train station and figure out the snowman's name.
+            </p>
+
+            <div class="row">
+                <div class="col-2">
+                    <img class="img-fluid" src="/assets/snowman/maze_start.jpg" />
+                </div>
+            </div>
+
+            <table class="table text-center">
+                <tbody>
+                    <tr>
+                        <td class="border border-5 border-dark border-top-0 border-end-0 border-bottom-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-bottom-0"><h4>F</h4></td>
+                        <td class="border border-5 border-dark border-end-0"><h4>S</h4></td>
+                        <td class="border border-5 border-dark border-start-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-bottom-0"></td>
+                        <td class="border border-5 border-dark border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-end-0"><h4>F</h4></td>
+                        <td class="border border-5 border-dark border-start-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-bottom-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-bottom-0"></td>
+                    </tr>
+                    <tr>
+                        <td class="border border-5 border-dark border-top-0 border-bottom-0"><h4>T</h4></td>
+                        <td class="border border-5 border-dark border-top-0 border-end-0"></td>
+                        <td class="border border-5 border-dark- border-start-0 border-bottom-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-bottom-0"></td>
+                        <td class="border border-5 border-dark border-top-0 border-end-0"><h4>Y</h4></td>
+                        <td class="border border-5 border-dark border-start-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-bottom-0"></td>
+                        <td class="border border-5 border-dark border-bottom-0 border-end-0"><h4>O</h4></td>
+                        <td class="border border-5 border-dark border-start-0 border-top-0"></td>
+                        <td class="border border-5 border-dark border-top-0"><h4>T</h4></td>
+                    </tr>
+                    <tr>
+                        <td class="border border-5 border-dark border-top-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-bottom-0"></td>
+                        <td class="border border-5 border-dark border-top-0 border-bottom-0"><h4>R</h4></td>
+                        <td class="border border-5 border-dark border-top-0 border-bottom-0"><h4>O</h4></td>
+                        <td class="border border-5 border-dark border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-bottom-0"><h4>R</h4></td>
+                        <td class="border border-5 border-dark border-bottom-0 border-end-0"><h4>T</h4></td>
+                        <td class="border border-5 border-dark border-start-0 border-top-0"></td>
+                        <td class="border border-5 border-dark border-top-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-bottom-0"><h4>R</h4></td>
+                    </tr>
+                    <tr>
+                        <td class="border border-5 border-dark border-bottom-0 border-end-0"><h4>R</h4></td>
+                        <td class="border border-5 border-dark border-start-0 border-top-0"></td>
+                        <td class="border border-5 border-dark border-top-0 border-bottom-0"></td>
+                        <td class="border border-5 border-dark border-top-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-top-0"></td>
+                        <td class="border border-5 border-dark border-top-0 border-bottom-0"></td>
+                        <td class="border border-5 border-dark border-bottom-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-bottom-0"></td>
+                        <td class="border border-5 border-dark border-bottom-0 border-end-0"><h4>T</h4></td>
+                        <td class="border border-5 border-dark border-start-0 border-top-0 border-bottom-0"></td>
+                    </tr>
+                    <tr>
+                        <td class="border border-5 border-dark border-top-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0"></td>
+                        <td class="border border-5 border-dark border-top-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-end-0"><h4>O</h4></td>
+                        <td class="border border-5 border-dark border-start-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-top-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-top-0"><h4>S</h4></td>
+                        <td class="border border-5 border-dark border-top-0 border-end-0"></td>
+                        <td class="border border-5 border-dark border-start-0 border-top-0"></td>
+                        <td class="border border-5 border-dark border-top-0 border-bottom-0"><h4>Y</h4></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="row">
+                <div class="col-3 offset-9">
+                    <img class="img-fluid float-end" src="/assets/snowman/maze_end.png" />
+                </div>
+            </div>
+
+            <app-enter-solution
+                [question]="questions[1]"
+                [answer]="answers[1]"
+                [validation]="answerValidation[1]"
+                [clues]="clues[1]"
+                (puzzleSolved)="continue()"
+            ></app-enter-solution>
         </ng-container>
         <ng-container *ngSwitchDefault>
             <div class="alert alert-danger text-center">
@@ -48,7 +185,7 @@
     </small></p>
 
     <div class="row">
-        <div class="d-grid col-6 mx-auto mt-3">
+        <div class="d-grid col-6 mx-auto my-3">
             <button type="button" class="btn btn-primary" routerLink="/">Back to Escape Room List</button>
         </div>
     </div>

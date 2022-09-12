@@ -13,16 +13,17 @@ export class SnowmanAdventureComponent implements OnInit {
 
   questions = [
     "What is the snowman missing?",
-    "Which one is the magic hat?"
+    "What is the snowman's name?"
   ];
 
   answers = [
     "hat",
-    "0"
+    "Frosty"
   ];
 
   answerValidation = [
-    AnswerValidationType.Includes
+    AnswerValidationType.Includes,
+    AnswerValidationType.Exact
   ];
 
   clues = [
@@ -31,25 +32,11 @@ export class SnowmanAdventureComponent implements OnInit {
       "What do you wear to keep your head warm?"
     ],
     [
-      "The magic hat has a feather.",
-      "The magic hat has animal print."
+      "There are 6 letters in the snowman's name.",
+      "The letters on the path through the maze spell his name."
     ]
   ];
-
-  pickOneItems = [
-    [
-      "/assets/snowman/hat_0.png",
-      "/assets/snowman/hat_1.png",
-      "/assets/snowman/hat_2.png",
-      "/assets/snowman/hat_3.png",
-      "/assets/snowman/hat_4.png",
-      "/assets/snowman/hat_5.png",
-      "/assets/snowman/hat_6.png",
-      "/assets/snowman/hat_7.png",
-      "/assets/snowman/hat_8.png",
-      "/assets/snowman/hat_9.png"
-    ]
-  ]
+  thermometerShowClue = false;
 
   constructor() { }
 
@@ -61,6 +48,10 @@ export class SnowmanAdventureComponent implements OnInit {
     if (this.currentPage < SnowmanPages.End) {
       this.currentPage++;
     }
+  }
+
+  showThermometerClue = () => {
+    this.thermometerShowClue = true;
   }
 }
 

@@ -1,0 +1,22 @@
+<h3 class="text-center">Find the magic hat!</h3>
+<p class="text-center">Use the following clues to determine which one is the magic hat. Click the correct hat to select it.</p>
+<ul class="text-center list-unstyled">
+    <li>The magic hat has a ribbon.</li>
+    <li>The magic hat is flat on top.</li>
+    <li>The magic hat has blue on it.</li>
+</ul>
+<div class="container">
+    <div class="row">
+        <div class="col-2 text-center" *ngFor="let hat of hats; let i=index">
+            <div [ngClass]="{'selected': hat.isSelected, 'disabled': hat.isDisabled}" (click)="clickHat(i)">
+                <img class="img-fluid" style="max-height: 10rem;" src="{{hat.imageUrl}}" />
+            </div>
+        </div>
+    </div>
+    <div class="d-grid">
+        <button type="button" class="btn btn-primary btn-block my-3" (click)="submitSelectedHat()">Submit</button>
+    </div>
+    <ng-container *ngFor="let clue of displayedClues">
+        <p class="text-center">{{clue}}</p>
+    </ng-container>
+</div>

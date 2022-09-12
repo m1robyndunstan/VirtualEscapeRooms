@@ -1,0 +1,10 @@
+.selected {
+    border: 0.5rem blue solid;
+    border-radius: 1rem;
+}
+.disabled {
+    border: 0.5rem darkgray solid;
+    border-radius: 1rem;
+    background-color: lightgray;
+    opacity: 50%;
+}
