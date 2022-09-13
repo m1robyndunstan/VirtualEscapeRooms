@@ -8,22 +8,25 @@ import { AnswerValidationType } from '../shared/enter-solution/enter-solution.co
 })
 export class SnowmanAdventureComponent implements OnInit {
 
-  currentPage = SnowmanPages.Fire;
+  currentPage = SnowmanPages.Phone;
   availablePages = SnowmanPages;
 
   questions = [
     "What is the snowman missing?",
-    "What is the snowman's name?"
+    "What is the snowman's name?",
+    "What type of building did you find?"
   ];
 
   answers = [
     "hat",
-    "Frosty"
+    "Frosty",
+    "greenhouse"
   ];
 
   answerValidation = [
     AnswerValidationType.Includes,
-    AnswerValidationType.Exact
+    AnswerValidationType.Exact,
+    AnswerValidationType.Includes
   ];
 
   clues = [
@@ -34,6 +37,10 @@ export class SnowmanAdventureComponent implements OnInit {
     [
       "There are 6 letters in the snowman's name.",
       "The letters on the path through the maze spell his name."
+    ],
+    [
+      "Put the picture together to find the answer.",
+      "what word is on the picture?"
     ]
   ];
 
@@ -49,6 +56,12 @@ export class SnowmanAdventureComponent implements OnInit {
     "/assets/snowman/fire_puzzle_6.png",
     "/assets/snowman/fire_puzzle_7.png"
   ];
+
+  phoneNumbers = [
+    {
+
+    }
+  ]
 
   constructor() { }
 

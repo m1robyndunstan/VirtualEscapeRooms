@@ -7,19 +7,23 @@ import { BuildSnowmanComponent } from './build-snowman/build-snowman.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { SharedModule } from '../shared/shared.module';
 import { PickHatComponent } from './pick-hat/pick-hat.component';
+import { TownMapComponent } from './town-map/town-map.component';
+import { PhonePuzzleModule } from './phone-puzzle/phone-puzzle.module';
 
 
 @NgModule({
   declarations: [
     SnowmanAdventureComponent,
     BuildSnowmanComponent,
-    PickHatComponent
+    PickHatComponent,
+    TownMapComponent
   ],
   imports: [
     CommonModule,
     DragDropModule,
     SharedModule,
-    SnowmanAdventureRoutingModule
+    SnowmanAdventureRoutingModule,
+    PhonePuzzleModule
   ]
 })
 export class SnowmanAdventureModule { }
