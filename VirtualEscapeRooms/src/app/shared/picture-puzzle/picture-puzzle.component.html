@@ -1,0 +1,5 @@
+<div cdkDropList (cdkDropListDropped)="drop($event)">
+    <div class="puzzle-piece text-center" *ngFor="let piece of displayPieces" cdkDrag>
+        <img src="{{piece}}" />
+    </div>
+</div>

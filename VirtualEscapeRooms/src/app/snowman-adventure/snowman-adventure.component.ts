@@ -8,7 +8,7 @@ import { AnswerValidationType } from '../shared/enter-solution/enter-solution.co
 })
 export class SnowmanAdventureComponent implements OnInit {
 
-  currentPage = SnowmanPages.Intro;
+  currentPage = SnowmanPages.Fire;
   availablePages = SnowmanPages;
 
   questions = [
@@ -36,7 +36,19 @@ export class SnowmanAdventureComponent implements OnInit {
       "The letters on the path through the maze spell his name."
     ]
   ];
+
   thermometerShowClue = false;
+
+  firePuzzlePieces = [
+    "/assets/snowman/fire_puzzle_0.png",
+    "/assets/snowman/fire_puzzle_1.png",
+    "/assets/snowman/fire_puzzle_2.png",
+    "/assets/snowman/fire_puzzle_3.png",
+    "/assets/snowman/fire_puzzle_4.png",
+    "/assets/snowman/fire_puzzle_5.png",
+    "/assets/snowman/fire_puzzle_6.png",
+    "/assets/snowman/fire_puzzle_7.png"
+  ];
 
   constructor() { }
 

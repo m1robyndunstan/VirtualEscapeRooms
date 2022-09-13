@@ -171,6 +171,32 @@
                 (puzzleSolved)="continue()"
             ></app-enter-solution>
         </ng-container>
+        <ng-container *ngSwitchCase="availablePages.Fire">
+            <p class="text-center">
+                You bring Frosty to the train station. When you arrive, you realize that none of 
+                you brought any money. You'll have to be sneaky to get on the train. Frosty and you 
+                slip into a refrigerated boxcar heading north. It's full of ice cream and frozen 
+                Christmas cakes. Now, a refrigerated boxcar is a splendid way to travel. Splendid 
+                that is... if one is a snowman. People, on the other hand, get dangerously cold. So 
+                when the little freight train stopped to let an express train full of happy 
+                Christmas travelers pass, everyone took advantage of teh opportunity and quickly 
+                got off.
+            </p>
+            <p class="text-center">
+                You come upon a tiny glen which seems almost magical. For it&apos;s Christmas Eve, 
+                and the woodland animals are all decorating for their big celebration. They know 
+                Santa is to come that night, and they wanted everything to be jsut right. The 
+                animals are delighted to help all of you get warm. The animals bring lots of sticks 
+                to a spot away from the glen so the fire wouldn't spread to the trees.
+            </p>
+            <p class="text-center">
+                Soon there was a spark, and in no time a splendid fire is crackling away. While the 
+                fire is being lit, the sun goes down, and it gets even colder. The fire helps, but 
+                it isn't enough to keep everyone warm in the cold winter wind. Fortunately, the 
+                light from the fire reflects off windows from further in the trees.
+            </p>
+            <app-picture-puzzle [pieces]="firePuzzlePieces"></app-picture-puzzle>
+        </ng-container>
         <ng-container *ngSwitchDefault>
             <div class="alert alert-danger text-center">
                 <h2>Something's not working</h2>
