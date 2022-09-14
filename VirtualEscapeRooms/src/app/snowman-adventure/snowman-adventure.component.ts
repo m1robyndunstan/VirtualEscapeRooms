@@ -8,25 +8,28 @@ import { AnswerValidationType } from '../shared/enter-solution/enter-solution.co
 })
 export class SnowmanAdventureComponent implements OnInit {
 
-  currentPage = SnowmanPages.Lock;
+  currentPage = SnowmanPages.Intro;
   availablePages = SnowmanPages;
 
   questions = [
     "What is the snowman missing?",
     "What is the snowman's name?",
-    "What type of building did you find?"
+    "What type of building did you find?",
+    "What is the lock combination?"
   ];
 
   answers = [
     "hat",
     "Frosty",
-    "greenhouse"
+    "greenhouse",
+    "7194"
   ];
 
   answerValidation = [
     AnswerValidationType.Includes,
     AnswerValidationType.Exact,
-    AnswerValidationType.Includes
+    AnswerValidationType.Includes,
+    AnswerValidationType.Exact
   ];
 
   clues = [
@@ -41,6 +44,10 @@ export class SnowmanAdventureComponent implements OnInit {
     [
       "Put the picture together to find the answer.",
       "what word is on the picture?"
+    ],
+    [
+      "Do the pictures on the lock remind you of anything in the greenhouse?",
+      "Count the number of times each picture appears in the greenhouse."
     ]
   ];
 
