@@ -8,7 +8,7 @@ import { AnswerValidationType } from '../shared/enter-solution/enter-solution.co
 })
 export class SnowmanAdventureComponent implements OnInit {
 
-  currentPage = SnowmanPages.Phone;
+  currentPage = SnowmanPages.Intro;
   availablePages = SnowmanPages;
 
   questions = [
@@ -56,12 +56,6 @@ export class SnowmanAdventureComponent implements OnInit {
     "/assets/snowman/fire_puzzle_6.png",
     "/assets/snowman/fire_puzzle_7.png"
   ];
-
-  phoneNumbers = [
-    {
-
-    }
-  ]
 
   constructor() { }
 
