@@ -1,0 +1,24 @@
+<h3 class="text-center">Which number belongs to Santa Claus?</h3>
+<div class="row">
+    <div class="col-6 col-md-3">
+        <app-phone-keypad></app-phone-keypad>
+    </div>
+    <div class="col-6 col-md-3">
+        <h4>Phonebook</h4>
+        <ul>
+            <li *ngFor="let name of displayNames">{{name}}</li>
+        </ul>
+        <p *ngFor="let clue of displayedClues">{{clue}}</p>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-4 d-grid my-2" *ngFor="let contact of displayNumbers">
+                <button type="button" [ngClass]="{'btn btn-lg p-3 text-center': true, 'btn-info': !contact.called, 'btn-light': contact.called}" [disabled]="contact.called" (click)="callNumber(contact)">
+                    <h1><i [ngClass]="contact.getIconClasses()"></i></h1>
+                    {{contact.number}}
+                </button>
+            </div>
+        </div>
+        <p class="text-center">{{displayFlavor}}</p>
+    </div>
+</div>

@@ -138,71 +138,7 @@
             <p class="text-center">
                 You search through the greenhouse and find a phone, but someone cut up the phone book. 
             </p>
-            <h3 class="text-center">Which number belongs to Santa Claus?</h3>
-            <div class="row">
-                <div class="col-6 col-md-3">
-                    <div class="border border-3 border-dark rounded bg-light text-center p-3">
-                        <div class="row">
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong>1<br /><small>&nbsp;</small></strong>
-                            </div>
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong>2<br /><small>ABC</small></strong>
-                            </div>
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong>3<br /><small>DEF</small></strong>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong>4<br /><small>GHI</small></strong>
-                            </div>
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong>5<br /><small>JKL</small></strong>
-                            </div>
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong>6<br /><small>MNO</small></strong>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong>7<br /><small>PQRS</small></strong>
-                            </div>
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong>8<br /><small>TUV</small></strong>
-                            </div>
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong>9<br /><small>WXYZ</small></strong>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong><i class="fa-solid fa-asterisk"></i><br /><small>&nbsp;</small></strong>
-                            </div>
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong>0<br /><small>&nbsp;</small></strong>
-                            </div>
-                            <div class="col border border-dark border-2 rounded-circle p-2 m-2">
-                                <strong><i class="fa-solid fa-hashtag"></i><br /><small>&nbsp;</small></strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6">
-                    <h4>Phonebook</h4>
-                    <ul>
-                        <li>Bunny, Easter</li>
-                        <li>Claus, Santa</li>
-                        <li>Fairy, Tooth</li>
-                        <li>Frost, Jack</li>
-                        <li>O&apos;Lantern, Jack</li>
-                        <li>Prince, Nutcracker</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <p><i class="fa-solid fa-phone"></i><i class="fa-solid fa-egg"></i><i class="fa-solid fa-sleigh"></i><i class="fa-solid fa-tooth"></i><i class="fa-solid fa-snowflake"></i><i class="fa-solid fa-ghost"></i><i class="fa-solid fa-crown"></i></p>
-                </div>
-            </div>
+            <app-phone-puzzle (calledSanta)="continue()"></app-phone-puzzle>
         </ng-container>
         <ng-container *ngSwitchDefault>
             <div class="alert alert-danger text-center">
