@@ -140,6 +140,17 @@
             </p>
             <app-phone-puzzle (calledSanta)="continue()"></app-phone-puzzle>
         </ng-container>
+        <ng-container *ngSwitchCase="availablePages.Lock">
+            <p class="text-center">
+                You reach Santa Claus on the phone. He promises to help, but he is in the middle of 
+                delivering presents and won&apos;t be there until morning. Meanwhile, Frosty is 
+                melting fast. You&apos;ll have to figure out how to ope the greenhouse door 
+                yourself. Maybe you can find some clues by looking around.
+            </p>
+            <div class="text-center">
+            <img class="img-fluid" src="/assets/snowman/greenhouse.png" />
+            </div>
+        </ng-container>
         <ng-container *ngSwitchDefault>
             <div class="alert alert-danger text-center">
                 <h2>Something's not working</h2>

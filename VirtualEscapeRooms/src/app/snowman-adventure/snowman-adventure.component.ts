@@ -8,7 +8,7 @@ import { AnswerValidationType } from '../shared/enter-solution/enter-solution.co
 })
 export class SnowmanAdventureComponent implements OnInit {
 
-  currentPage = SnowmanPages.Intro;
+  currentPage = SnowmanPages.Lock;
   availablePages = SnowmanPages;
 
   questions = [
