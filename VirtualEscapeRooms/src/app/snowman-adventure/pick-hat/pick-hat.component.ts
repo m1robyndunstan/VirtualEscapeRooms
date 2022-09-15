@@ -15,16 +15,16 @@ export class PickHatComponent implements OnInit {
     "The magic hat is the first hat, purple with a blue feather and animal print ribbon."
   ];
   hats = [
-    new Hat("/assets/snowman/hat_0.png"),
-    new Hat("/assets/snowman/hat_1.png"),
-    new Hat("/assets/snowman/hat_2.png"),
-    new Hat("/assets/snowman/hat_3.png"),
-    new Hat("/assets/snowman/hat_4.png"),
-    new Hat("/assets/snowman/hat_5.png"),
-    new Hat("/assets/snowman/hat_6.png"),
-    new Hat("/assets/snowman/hat_7.png"),
-    new Hat("/assets/snowman/hat_8.png"),
-    new Hat("/assets/snowman/hat_9.png")
+    new Hat("./assets/snowman/hat_0.png"),
+    new Hat("./assets/snowman/hat_1.png"),
+    new Hat("./assets/snowman/hat_2.png"),
+    new Hat("./assets/snowman/hat_3.png"),
+    new Hat("./assets/snowman/hat_4.png"),
+    new Hat("./assets/snowman/hat_5.png"),
+    new Hat("./assets/snowman/hat_6.png"),
+    new Hat("./assets/snowman/hat_7.png"),
+    new Hat("./assets/snowman/hat_8.png"),
+    new Hat("./assets/snowman/hat_9.png")
   ];
   displayedClues: string[] = [];
 

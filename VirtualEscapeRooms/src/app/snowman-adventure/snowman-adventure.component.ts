@@ -54,14 +54,14 @@ export class SnowmanAdventureComponent implements OnInit {
   thermometerShowClue = false;
 
   firePuzzlePieces = [
-    "/assets/snowman/fire_puzzle_0.png",
-    "/assets/snowman/fire_puzzle_1.png",
-    "/assets/snowman/fire_puzzle_2.png",
-    "/assets/snowman/fire_puzzle_3.png",
-    "/assets/snowman/fire_puzzle_4.png",
-    "/assets/snowman/fire_puzzle_5.png",
-    "/assets/snowman/fire_puzzle_6.png",
-    "/assets/snowman/fire_puzzle_7.png"
+    "./assets/snowman/fire_puzzle_0.png",
+    "./assets/snowman/fire_puzzle_1.png",
+    "./assets/snowman/fire_puzzle_2.png",
+    "./assets/snowman/fire_puzzle_3.png",
+    "./assets/snowman/fire_puzzle_4.png",
+    "./assets/snowman/fire_puzzle_5.png",
+    "./assets/snowman/fire_puzzle_6.png",
+    "./assets/snowman/fire_puzzle_7.png"
   ];
 
   constructor() { }
