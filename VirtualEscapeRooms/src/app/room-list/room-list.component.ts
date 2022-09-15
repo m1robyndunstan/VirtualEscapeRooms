@@ -9,7 +9,7 @@ export class RoomListComponent implements OnInit {
   rooms: Room[] = [
     new Room(
       "Snowman Adventure", 
-      "./assets/snowman/snowman-icon.png", 
+      "/assets//snowman/snowman-icon.png", 
       "snowman head",
       "A Christmas-themed adventure to save a snowman from melting.", 
       "/snowman")
