@@ -1,9 +1,10 @@
 # VirtualEscapeRooms
 Escape room puzzles on a web page with clues and verifying answers handled by code
+[Play here](https://m1robyndunstan.github.io/VirtualEscapeRooms)
 
 ## Setup
 
-1. Download the latest version of teh game from [here](https://github.com/m1robyndunstan/VirtualEscapeRooms/tree/main/dist).
+1. Download the latest version of the game from [here](https://github.com/m1robyndunstan/VirtualEscapeRooms/tree/main/dist).
 1. Unzip the folder.
 1. Open `index.html` in a browser. Double-clicking the file should open it in your default browser.
 
@@ -26,10 +27,8 @@ Escape room puzzles on a web page with clues and verifying answers handled by co
 1. Open a commandline and navigate to folder `<git repository parent directory>/VirtualEscapeRooms/VirtualEscapeRooms`.
 1. Run `npm install`.
 1. Build the application. Run the following command on the commandline. `ng build --base-href "./" --delete-output-path`
-1. Go to folder `<git repository parent directory>/VirtualEscapeRooms/VirtualEscapeRooms/dist/VirtualEscapeRooms`. Rename the folder to `VirtualEscapeRooms-#.#` where `#.#` is the version number.
-1. Zip the contents of the folder into an archive (ex: `VirtualEscapeRooms-#.#.zip`).
-1. Copy the archive to folder `<git repository directory>/dist`.
-This doesn't work. Have to remove lazy loading and find a plugin to bundle all files into index.html, otherwise cross-script complains.
+1. Go to folder `<git repository parent directory>/VirtualEscapeRooms/VirtualEscapeRooms/dist/virtual-escape-rooms`. 
+1. Copy the contents of the folder to a server you wish to deploy to. I use GitHub Pages. (`<git repository parent directory>/VirtualEscapeRooms/docs`)
 
 ## Technologies
 
