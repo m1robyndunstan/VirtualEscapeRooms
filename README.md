@@ -25,7 +25,7 @@ Escape room puzzles on a web page with clues and verifying answers handled by co
 
 1. Open a commandline and navigate to folder `<git repository parent directory>/VirtualEscapeRooms/VirtualEscapeRooms`.
 1. Run `npm install`.
-1. Build the application. Run the following command on the commandline. `ng build --base-href "" --delete-output-path`
+1. Build the application. Run the following command on the commandline. `ng build --base-href "./" --delete-output-path`
 1. Go to folder `<git repository parent directory>/VirtualEscapeRooms/VirtualEscapeRooms/dist/VirtualEscapeRooms`. Rename the folder to `VirtualEscapeRooms-#.#` where `#.#` is the version number.
 1. Zip the contents of the folder into an archive (ex: `VirtualEscapeRooms-#.#.zip`).
 1. Copy the archive to folder `<git repository directory>/dist`.
