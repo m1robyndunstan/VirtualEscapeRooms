@@ -1,1 +1,36 @@
-<p>hobbit works!</p>
+<div class="container">
+    <h1 class="text-center">There and Back Again</h1>
+
+    <div class="my-5" [ngSwitch]="currentPage">
+        <ng-container *ngSwitchCase="availablePages.Intro">
+            <p class="text-center">
+                Refuse to come home when humans are going to bed; stay out all night then yowl like 
+                i am dying at 4am murder hooman toes or meow for flex claws on the human's belly and 
+                purr like a lawnmower leave fur on owners clothes pelt around the house and up and 
+                down stairs chasing phantoms mess up all the toilet paper. Bird bird bird bird bird 
+                bird human why take bird out i could have eaten that litter box is life. Caticus 
+                cuteicus knock dish off table head butt cant eat out of my own dish, but gnaw the 
+                corn cob. What a cat-ass-trophy!. Lie on your belly and purr when you are asleep toy 
+                mouse squeak roll over experiences short bursts of poo-phoria after going to the loo 
+                for wack the mini furry mouse.
+            </p>
+        </ng-container>
+        <ng-container *ngSwitchDefault>
+            <div class="alert alert-danger text-center">
+                <h2>Something's not working</h2>
+            </div>
+        </ng-container>
+    </div>
+
+    <p class="text-center my-3"><small>
+        Inspired by <a target="_blank" href="https://en.wikipedia.org/wiki/The_Hobbit">
+            The Hobbit by J.R.R. Tolkien
+        </a>
+    </small></p>
+
+    <div class="row">
+        <div class="d-grid col-6 mx-auto my-3">
+            <button type="button" class="btn btn-primary" routerLink="/">Back to Escape Room List</button>
+        </div>
+    </div>
+</div>

@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HobbitComponent implements OnInit {
 
+  currentPage = HobbitPages.Intro;
+  availablePages = HobbitPages;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+}
+
+enum HobbitPages {
+  Intro
 }
