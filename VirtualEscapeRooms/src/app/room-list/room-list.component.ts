@@ -12,7 +12,13 @@ export class RoomListComponent implements OnInit {
       "./assets/snowman/snowman-icon.png", 
       "snowman head",
       "A Christmas-themed adventure to save a snowman from melting.", 
-      "/snowman")
+      "/snowman"),
+    new Room(
+      "There and Back Again",
+      "./assets/hobbit/500x500.jfif",
+      "placeholder for future picture",
+      "Join Bilbo on a quest to reclaim Erebor from the dragon Smaug",
+      "/hobbit")
   ];
 
   constructor() { }
