@@ -1,6 +1,6 @@
 <div class="container">
     <h1 class="text-center">Virtual Escape Rooms</h1>
-    <div class="row row-cols-4">
+    <div class="row row-cols-md-4">
         <ng-container *ngFor="let room of rooms">
             <div class="card link-card" routerLink="{{room.linkUrl}}">
                 <img src="{{room.imageUrl}}" class="card-img-top" alt="{{room.imageAlt}}" />
