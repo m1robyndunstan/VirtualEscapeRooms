@@ -4,12 +4,6 @@ Escape room puzzles on a web page with clues and verifying answers handled by co
 
 [Play here](https://m1robyndunstan.github.io/VirtualEscapeRooms)
 
-## Setup
-
-1. Download the latest version of the game from [here](https://github.com/m1robyndunstan/VirtualEscapeRooms/tree/main/dist).
-1. Unzip the folder.
-1. Open `index.html` in a browser. Double-clicking the file should open it in your default browser.
-
 ## Developer Setup
 
 1. Clone this repository.
