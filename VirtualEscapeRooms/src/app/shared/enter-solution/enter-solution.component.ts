@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-enter-solution',
@@ -19,7 +19,7 @@ export class EnterSolutionComponent implements OnInit {
 
   displayedClues: string[] = [];
 
-  answerControl = new FormControl('');
+  answerControl = new UntypedFormControl('');
 
   constructor() { }
 
