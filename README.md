@@ -28,11 +28,15 @@ Escape room puzzles on a web page with clues and verifying answers handled by co
 
 ## Technologies
 
-- [Angular 13](https://angular.io/)
+- [Angular 16](https://angular.io/)
 - [Font Awesome 6](https://fontawesome.com/)
 - [Bootstrap 5](https://getbootstrap.com/)
 
 ## Change Log
+
+### [1.1] - 2023-10-31
+
+Upgrade from Angular 13 to Angular 16
 
 ### [1.0] - 2022-09-14
 
